@@ -1,0 +1,97 @@
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    justify-content: center;
+}
+
+@media (max-width: 962px) {
+
+    body {
+        position: relative;
+        overflow: scroll;
+        display: grid;
+    }   
+
+    .navegador {
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        position: absolute;
+        overflow: scroll;
+        display: block;
+    }   
+
+    .navegador {
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navegador {
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    height: 7%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: end;
+    background-color: rgb(25, 25, 25);
+    border: 1px solid rgb(40, 40, 40);
+}
+
+.homeBotton {
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    li {
+        padding: 2px 5px 2px 5px;
+        background-color: rgb(50, 50, 50);
+        border-radius: 10px;
+    }
+}
+
+li {
+    padding: 2px 5px 2px 5px;
+    transition: 200ms;
+}
+
+li:hover {
+    border-radius: 3px;
+    background-color: rgb(40, 40, 40);
+    animation: animedBottons 200ms linear forwards;
+}
+
+@keyframes animedBottons {
+
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(-2px, -2px);
+    }
+}

@@ -1,0 +1,20 @@
+#contatos {
+    position: fixed;
+    width: 2.5%;
+    height: 195px;
+    bottom: 3%;
+    left: 1.7%;
+    display: table-column;
+}
+
+#contatos img {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 450px) {
+    #contatos {
+        display: none;
+    }
+}
