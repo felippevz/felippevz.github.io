@@ -15,16 +15,12 @@ body {
     body {
         position: relative;
         overflow: scroll;
-        display: grid;
+        align-items: center;
+        flex-direction: column;
     }   
-
-    .navegador {
-        position: fixed;
-        z-index: 1;
-    }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     body {
         position: absolute;
         overflow: scroll;
@@ -51,6 +47,7 @@ a {
     position: fixed;
     align-items: center;
     justify-content: end;
+    z-index: 1;
     background-color: rgb(25, 25, 25);
     border: 1px solid rgb(40, 40, 40);
 }
@@ -67,7 +64,7 @@ ul {
     align-items: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     li {
         padding: 2px 5px 2px 5px;
         background-color: rgb(50, 50, 50);

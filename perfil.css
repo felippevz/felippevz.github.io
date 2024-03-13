@@ -6,7 +6,7 @@
     margin-right: 0.5vw;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     
     #perfil .name, #perfil #age{
         text-align: center;
@@ -19,7 +19,7 @@
     }
 }
 
-@media (max-width: 396px) {
+@media (max-width: 410px) {
     
     #perfil .name, #perfil #age{
         text-align: center;
