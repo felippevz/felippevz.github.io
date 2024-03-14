@@ -17,7 +17,11 @@ body {
         overflow: scroll;
         align-items: center;
         flex-direction: column;
-    }   
+    }
+
+    .navegador {
+        position: relative;
+    }
 }
 
 @media (max-width: 600px) {
@@ -28,7 +32,6 @@ body {
     }   
 
     .navegador {
-        position: fixed;
         z-index: 1;
     }
 }
